@@ -2,7 +2,7 @@ import { Routes, Route, Navigate, NavLink } from 'react-router-dom';
 
 import './App.scss';
 import { PeoplePage } from './pages/PeoplePage/PeoplePage';
-import { HomePaige } from './pages/HomePage/HomePage';
+import { HomePage } from './pages/HomePage/HomePage';
 import { PageNotFound } from './pages/PageNotFound/PageNotFound';
 
 export const App = () => (
@@ -38,7 +38,7 @@ export const App = () => (
     <main className="section">
       <div className="container">
         <Routes>
-          <Route path="/" element={<HomePaige />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="people">
             <Route index element={<PeoplePage />} />
             <Route path=":personSlug" element={<PeoplePage />} />
